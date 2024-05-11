@@ -1,0 +1,24 @@
+.ComfortFood {
+margin-bottom:18.7rem;
+}
+.ComfortFood__images {
+    max-width:900px;
+    margin: 0 auto;
+    position:relative;
+    margin-bottom: 8rem;
+}
+
+.ComfortFood__images_imgR {
+    display:block;
+    position:absolute;
+    top: 5.6%;
+    right: -19.3%;
+}
+
+.ComfortFood__text {
+    max-width:428px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}

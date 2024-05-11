@@ -1,0 +1,51 @@
+.GuestHouse {
+    margin-top:12.8rem;
+    margin-bottom:14.4rem;
+    overflow:hidden;
+}
+
+.GuestHouse__main_text {
+    font-family: GENTO DREAM;
+    font-size: 100px;
+    line-height: 130px;
+    text-align: center;
+    color:rgba(240, 238, 219, 1);
+    /* color: #afad9c; */
+    max-width:869px;
+    margin: 0 auto;
+    position:relative;
+    margin-bottom: 10.1rem;
+    displey:flex;
+}
+.GuestHouse__main_text span {
+    position:relative;
+    z-index:1;
+}
+
+.GuestHouse__main_text_img {
+    position:absolute;
+    top: 14%;
+    right: -17%;
+    /* transform: translate(120% 120%); */
+}
+.GuestHouse__text_img p {
+    max-width:400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 1.6rem;
+}
+.GuestHouse__text_img__pictures {
+    max-width: 352px;
+    margin: 8rem auto 8.1rem auto;
+    position:relative;
+}
+.GuestHouse__text_img__pictures_imgL {
+
+}
+.GuestHouse__text_img__pictures_imgR {
+    position: absolute;
+    bottom: -21%;
+    right: -7%;
+}

@@ -1,0 +1,37 @@
+.MadameRoche {
+    margin-top: 14.5rem;
+}
+
+.MadameRoche_img {
+    display:block;
+    position:relative;
+    max-width:561px;
+    margin: 0 auto;
+}
+
+.MadameRoche__mask_img {
+    position: absolute;
+    top: 38%;
+    left:32%;
+}
+.MadameRoche__i_img {
+    position: absolute;
+    bottom: -10%;
+    left:13%; 
+    z-index:1
+}
+.MadameRoche_name__container {
+    position: relative;
+    height: 40px;
+}
+
+.MadameRoche_name__container span {
+    font-size: 21px;
+    color:#B1525E;
+    font-weight: 400;
+    line-height: 26px;
+    position:absolute;
+    top: -27px;
+    right: 28%;
+    transform: rotate(-14deg);
+}

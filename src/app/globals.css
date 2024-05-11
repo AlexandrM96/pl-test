@@ -1,0 +1,34 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Mono";
+  src: url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "GENTO DREAM";
+  src: url("./../fonts/GENTO-DREAM.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: rgba(240, 238, 219, 1);
+  font-family: "PT Mono",  monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container{
+  max-width:1920px;
+  width: 1720px;
+  margin: 0 auto;
+}
