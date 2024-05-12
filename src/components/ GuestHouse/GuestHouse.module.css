@@ -1,51 +1,108 @@
 .GuestHouse {
-    margin-top:12.8rem;
-    margin-bottom:14.4rem;
-    overflow:hidden;
+  margin-top: 12.8rem;
+  margin-bottom: 14.4rem;
+  overflow: hidden;
+  @media (max-width: 1050px) {
+    margin-bottom: 8rem;
+  }
+  @media (max-width: 793px) {
+    margin-top: 8rem;
+  }
+  @media (max-width: 780px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .GuestHouse__main_text {
-    font-family: GENTO DREAM;
-    font-size: 100px;
-    line-height: 130px;
-    text-align: center;
-    color:rgba(240, 238, 219, 1);
-    /* color: #afad9c; */
-    max-width:869px;
-    margin: 0 auto;
-    position:relative;
-    margin-bottom: 10.1rem;
-    displey:flex;
+  font-family: GENTO DREAM;
+  font-size: 100px;
+  line-height: 130px;
+  text-align: center;
+  color: rgba(240, 238, 219, 1);
+  max-width: 869px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10.1rem;
+  displey: flex;
+  @media (max-width: 1200px) {
+    font-size: 60px;
+    max-width: 569px;
+    line-height: 100px;
+    margin-bottom: 8rem;
+  }
+  @media (max-width: 793px) {
+    font-size: 50px;
+    line-height: 70px;
+    max-width: 310px;
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 780px) {
+    margin-bottom: 2rem;
+  }
 }
 .GuestHouse__main_text span {
-    position:relative;
-    z-index:1;
+  position: relative;
+  z-index: 1;
 }
 
 .GuestHouse__main_text_img {
-    position:absolute;
-    top: 14%;
-    right: -17%;
-    /* transform: translate(120% 120%); */
+  position: absolute;
+  top: 14%;
+  right: -17%;
+  width: 578px;
+  height: 986px;
+  @media (max-width: 1200px) {
+    width: 378px;
+    height: 586px;
+  }
+  @media (max-width: 793px) {
+    width: 178px;
+    height: 386px;
+    right: 0;
+  }
 }
 .GuestHouse__text_img p {
-    max-width:400px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 1.6rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 1.6rem;
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
 }
 .GuestHouse__text_img__pictures {
-    max-width: 352px;
-    margin: 8rem auto 8.1rem auto;
-    position:relative;
+  max-width: 352px;
+  margin: 8rem auto 8.5rem auto;
+  position: relative;
+  @media (max-width: 1200px) {
+    margin: 3rem auto 4.5rem auto;
+  }
+  @media (max-width: 793px) {
+    max-width: 200px;
+  }
 }
 .GuestHouse__text_img__pictures_imgL {
-
+  display: block;
+  position: relative;
+  width: 252px;
+  height: 321px;
+  @media (max-width: 793px) {
+    width: 152px;
+    height: 221px;
+  }
 }
 .GuestHouse__text_img__pictures_imgR {
-    position: absolute;
-    bottom: -21%;
-    right: -7%;
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 250px;
+  bottom: -21%;
+  right: -7%;
+  @media (max-width: 793px) {
+    width: 110px;
+    height: 150px;
+  }
 }

@@ -1,24 +1,72 @@
 .ComfortFood {
-margin-bottom:18.7rem;
+  margin-bottom: 18.7rem;
+  @media (max-width: 1050px) {
+    margin-bottom: 5rem;
+  }
 }
 .ComfortFood__images {
-    max-width:900px;
-    margin: 0 auto;
-    position:relative;
-    margin-bottom: 8rem;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 8rem;
+  @media (max-width: 1392px) {
+    max-width: 700px;
+  }
+  @media (max-width: 1050px) {
+    max-width: 600px;
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 902px) {
+    width: 400px;
+  }
+  @media (max-width: 780px) {
+    margin-bottom: 3rem;
+  }
+}
+.ComfortFood__images_img {
+  display: block;
+  position: relative;
+  width: 908px;
+  height: 591px;
+  @media (max-width: 1392px) {
+    width: 700px;
+    height: 491px;
+  }
+  @media (max-width: 1050px) {
+    width: 600px;
+    height: 391px;
+  }
+  @media (max-width: 902px) {
+    width: 400px;
+    height: 291px;
+  }
+  
 }
 
 .ComfortFood__images_imgR {
-    display:block;
-    position:absolute;
-    top: 5.6%;
-    right: -19.3%;
+  display: block;
+  position: absolute;
+  width: 324px;
+  height: 442px;
+  top: 5.6%;
+  right: -19.3%;
+  @media (max-width: 1392px) {
+    width: 224px;
+    height: 342px;
+  }
+  @media (max-width: 902px) {
+    width: 130px;
+    height: 200px;
+  }
 }
 
 .ComfortFood__text {
-    max-width:428px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
+  max-width: 428px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  @media (max-width: 780px) {
+    font-size: 14px;
+  }
 }

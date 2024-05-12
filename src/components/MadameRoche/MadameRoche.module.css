@@ -1,37 +1,93 @@
 .MadameRoche {
-    margin-top: 14.5rem;
+  margin-top: 14.5rem;
+  @media (max-width: 767px) {
+    margin-top: 5rem;
+  }
 }
 
-.MadameRoche_img {
-    display:block;
-    position:relative;
-    max-width:561px;
-    margin: 0 auto;
+.MadameRoche_imgs {
+  display: block;
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    width: 350px;
+  }
+  /* transform: scale(0); */
 }
 
-.MadameRoche__mask_img {
-    position: absolute;
-    top: 38%;
-    left:32%;
-}
-.MadameRoche__i_img {
-    position: absolute;
-    bottom: -10%;
-    left:13%; 
-    z-index:1
-}
-.MadameRoche_name__container {
-    position: relative;
-    height: 40px;
+.MadameRoche_imgs__mr_img {
+  display: block;
+  position: relative;
+  width: 603px;
+  height: 578px;
+  left: 5.6rem;
+  top: 0.2rem;
+  @media (max-width: 1000px) {
+    width: 503px;
+    height: 478px;
+  }
+  @media (max-width: 767px) {
+    width: 330px;
+    height: 258px;
+    left: 0;
+  }
 }
 
-.MadameRoche_name__container span {
-    font-size: 21px;
-    color:#B1525E;
-    font-weight: 400;
-    line-height: 26px;
-    position:absolute;
-    top: -27px;
-    right: 28%;
-    transform: rotate(-14deg);
+.MadameRoche_imgs__mask_img {
+  display: block;
+  position: absolute;
+  width: 278px;
+  height: 61px;
+  top: 14rem;
+  left: 17rem;
+
+  @media (max-width: 1000px) {
+    width: 178px;
+    height: 51px;
+    top: 11.5rem;
+    left: 16.5rem;
+  }
+  @media (max-width: 767px) {
+    width: 128px;
+    height: 31px;
+    top: 6.3rem;
+    left: 7rem;
+  }
+}
+.MadameRoche_imgs__i_img {
+  display: block;
+  position: absolute;
+  width: 84px;
+  height: 126px;
+  bottom: -4.1rem;
+  left: 10.4rem;
+  z-index: 1;
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 84px;
+    left: 2rem;
+    bottom: -3rem;
+  }
+}
+.MadameRoche_imgs__name {
+  display: block;
+}
+.MadameRoche_imgs__name span {
+  font-size: 21px;
+  color: #b1525e;
+  font-weight: 400;
+  line-height: 26px;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 37rem;
+  transform: rotate(-14deg);
+  @media (max-width: 1000px) {
+    left: 30rem;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    bottom: -1rem;
+    left: 15rem;
+  }
 }
