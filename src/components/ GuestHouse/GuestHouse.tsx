@@ -18,7 +18,7 @@ export default function GuestHouse() {
   function useArrayRef() {
     const lettersRef = useRef([]);
     lettersRef.current = [];
-    return [lettersRef, (ref) => ref && lettersRef.current.push(ref)];
+    return [lettersRef, (ref: never) => ref && lettersRef.current.push(ref)];
   }
 
   gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +26,8 @@ export default function GuestHouse() {
     "The guest house of the mysterious Asian woman in the heart of the Eurasian world";
 
   useEffect(() => {
-    const anim = gsap.to(lettersRef.current, {
+    //@ts-ignore
+    gsap.to(lettersRef.current, {
       color: "#B51B1B",
       duration: 5,
       stagger: 1,
@@ -115,16 +116,13 @@ export default function GuestHouse() {
         },
       }
     );
-
-    return () => {
-      anim.kill();
-    };
   }, []);
 
   return (
     <section className={styles.GuestHouse} ref={triggerRefSection}>
       <div className={styles.GuestHouse__main_text} ref={triggerRef}>
         {text.split("").map((letter, index) => (
+          //@ts-ignore
           <span key={index} ref={setLettersRef}>
             {letter}
           </span>

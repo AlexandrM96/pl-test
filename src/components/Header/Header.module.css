@@ -1,5 +1,9 @@
 .header {
   padding-top: 2.2rem;
+  margin-bottom: 14.5rem;
+  @media (max-width: 767px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .header_content {

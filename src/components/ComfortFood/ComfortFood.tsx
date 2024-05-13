@@ -40,6 +40,7 @@ export default function ComfortFood() {
         scrollTrigger: {
           trigger: foodList.current,
           start: "top center",
+
           toggleActions: "play none none reverse",
         },
       }

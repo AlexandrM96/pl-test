@@ -1,7 +1,7 @@
 .MadameRoche {
-  margin-top: 14.5rem;
-  @media (max-width: 767px) {
-    margin-top: 5rem;
+  margin-bottom: 12.8rem;
+  @media (max-width: 793px) {
+    margin-bottom: 8rem;
   }
 }
 
@@ -13,7 +13,6 @@
   @media (max-width: 767px) {
     width: 350px;
   }
-  /* transform: scale(0); */
 }
 
 .MadameRoche_imgs__mr_img {

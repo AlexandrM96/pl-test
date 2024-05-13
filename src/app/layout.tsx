@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { PT_Mono, Gento } from "next/font/google";
-import localFont from 'next/font/local';
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-
-// const mono = PT_Mono({  subsets:["latin"], weight: ["400"] });
-
-// const myFontMono = localFont({ src: '../fonts/PTMono.ttc' })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,12 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      {/* <body className={myFontMono.className}> */}
       <body>
-        <Header/>
-          {children}
-        <Footer/>
-        </body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

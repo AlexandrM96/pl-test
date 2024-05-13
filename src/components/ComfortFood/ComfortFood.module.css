@@ -22,6 +22,9 @@
   @media (max-width: 780px) {
     margin-bottom: 3rem;
   }
+  @media (max-width: 590px) {
+    width: 250px;
+  }
 }
 .ComfortFood__images_img {
   display: block;
@@ -40,7 +43,10 @@
     width: 400px;
     height: 291px;
   }
-  
+  @media (max-width: 590px) {
+    width: 250px;
+    height: 141px;
+  }
 }
 
 .ComfortFood__images_imgR {
@@ -57,6 +63,10 @@
   @media (max-width: 902px) {
     width: 130px;
     height: 200px;
+  }
+  @media (max-width: 590px) {
+    width: 80px;
+    height: 110px;
   }
 }
 

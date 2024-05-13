@@ -14,20 +14,15 @@ export default function MadameRoche() {
   const refNameImg = useRef();
 
   useEffect(() => {
-    const mainImg = refMainImg.current;
-    const mask = refMaskImg.current;
-    const ieg = refIImg.current;
-    const name = refNameImg.current;
-
     gsap.fromTo(
-      mainImg,
+      refMainImg.current,
       { scale: 0 },
       {
         scale: 1,
         duration: 1,
         ease: "bounce.out",
         scrollTrigger: {
-          trigger: mainImg,
+          trigger: refMainImg.current,
           start: "top bottom-=100",
           toggleActions: "play none none reverse",
         },
@@ -35,13 +30,13 @@ export default function MadameRoche() {
     );
 
     gsap.fromTo(
-      mask,
+      refMaskImg.current,
       { translateX: -2000 },
       {
         translateX: 0,
         duration: 1,
         scrollTrigger: {
-          trigger: mask,
+          trigger: refMaskImg.current,
           start: "top bottom-=280",
           toggleActions: "play none none reverse",
         },
@@ -49,13 +44,13 @@ export default function MadameRoche() {
     );
 
     gsap.fromTo(
-      ieg,
+      refIImg.current,
       { translateX: -2000 },
       {
         translateX: 0,
         duration: 1,
         scrollTrigger: {
-          trigger: ieg,
+          trigger: refIImg.current,
           start: "top bottom-=200",
           toggleActions: "play none none reverse",
         },
@@ -63,13 +58,13 @@ export default function MadameRoche() {
     );
 
     gsap.fromTo(
-      name,
+      refNameImg.current,
       { translateX: 2000 },
       {
         translateX: 0,
         duration: 1,
         scrollTrigger: {
-          trigger: name,
+          trigger: refNameImg.current,
           start: "top bottom-=123",
           toggleActions: "play none none reverse",
         },
@@ -79,7 +74,7 @@ export default function MadameRoche() {
 
   return (
     <section className={styles.MadameRoche}>
-      <span className={styles.MadameRoche_imgs}>
+      <div className={styles.MadameRoche_imgs}>
         <picture className={styles.MadameRoche_imgs__mr_img}>
           <Image
             ref={refMainImg}
@@ -99,10 +94,10 @@ export default function MadameRoche() {
         <picture className={styles.MadameRoche_imgs__mask_img}>
           <Image ref={refMaskImg} src="/img/mask.png" fill alt="image mask" />
         </picture>
-        <span ref={refNameImg} className={styles.MadameRoche_imgs__name}>
+        <div ref={refNameImg} className={styles.MadameRoche_imgs__name}>
           <span>Madame Roche</span>
-        </span>
-      </span>
+        </div>
+      </div>
     </section>
   );
 }
